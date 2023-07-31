@@ -1,15 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const name = "VIX";
+const name = "V";
 const time = new Date();
+const curretTime = time.getHours();
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+let greeting;
+
+const customStyle = {
+  color: "",
+};
+
+if (curretTime < 12) {
+  greeting = "Good Morning";
+  customStyle.color = "red";
+} else if (curretTime < 18) {
+  greeting = "Good Afternoon";
+  customStyle.color = "green";
+} else {
+  greeting = "Good Evening";
+  customStyle.color = "blue";
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-  <div>
-    <h1>Hello {`MISTA`} {`${name}`}!</h1>
-    <p>Your local time is {time.getHours()} {": " + time.getMinutes()}</p>
+    <div>
+      <h1 className="heading" style={customStyle}>
+        Hello {greeting} {`Mr.`}
+        {`${name}`}!
+      </h1>
+      <p style={{ color: "darkblue" }}>
+        Your local time is {time.getHours()}
+        {":" + time.getMinutes()}
+      </p>
     </div>
   </React.StrictMode>
 );
