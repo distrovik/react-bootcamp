@@ -23,7 +23,7 @@ function Heading() {
   }
 
   return (
-    <h1 className="heading" style={customStyle}>
+    <h1 className="header" style={customStyle}>
       Hello {greeting} {`Mr.`}
       {`${name}`}!
     </h1>
