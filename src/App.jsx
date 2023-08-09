@@ -4,6 +4,8 @@ import Paragraph from "./components/Paragraph";
 import Personal, {Race} from "./components/Personal"
 import * as Image from "./components/Image"
 import Card from "./components/Card"
+import Contacts from "./components/Contacts"
+import createCard from "./components/MapContacts";
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
         tel="011-63390XXX"
         email="mrirfanwork@gmail.com"
       />
+      {Contacts.map(createCard)}
     </div>
   );
 }
