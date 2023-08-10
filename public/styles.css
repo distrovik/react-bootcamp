@@ -22,30 +22,30 @@ h1 span {
 }
 
 nav {
-    display: inline-block;
-    margin-left: 10px;
-  }
-  
+  display: inline-block;
+  margin-left: 10px;
+}
+
 .heading {
-    text-align: center;
-    font-size: 4em;
-    font-weight: bold;
-    color: #2d3436;
-    margin: 50px auto 30px auto;
-  }
+  text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+  color: #2d3436;
+  margin: 50px auto 30px auto;
+}
 
 .header {
-    margin: 20px auto 0 auto;
-    max-width: 400px;
-    font-size: 50px;
-    font-weight: bold;
-    border-bottom: 5px solid black;
+  margin: 20px auto 0 auto;
+  max-width: 400px;
+  font-size: 50px;
+  font-weight: bold;
+  border-bottom: 5px solid black;
 }
 
 .dp {
-    margin: 50px auto 20px auto;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+  margin: 50px auto 20px auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
