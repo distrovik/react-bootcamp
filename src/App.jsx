@@ -1,30 +1,21 @@
 import React from "react";
-import Heading from "./components/Heading";
-import Paragraph from "./components/Paragraph";
-import Personal, {Race} from "./components/Personal"
-import * as Image from "./components/Image"
-import Card from "./components/Card"
-import Contacts from "./components/Contacts"
-import createCard from "./components/MapContacts";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Contact from "./pages/contacts"
+import Home from "./pages/home"
+import Emojipedia from "./pages/emojipedia"
+
 
 function App() {
   return (
+    <Router>
     <div>
-      <Heading />
-      <Image.Img3 />
-      <Paragraph />
-      <Personal />
-      {Race()}
-      <br/>
-      <Card 
-        name="Irfan Fairuz"
-        img="https://eu.bungiestore.com/media/wysiwyg/seasonal-reward-1.png"
-        imgCss="circle-img"
-        tel="011-63390XXX"
-        email="mrirfanwork@gmail.com"
-      />
-      {Contacts.map(createCard)}
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/contacts" element={<Contact/>}/>
+        <Route path="/emojipedia" element={<Emojipedia/>}/>
+      </Routes>
     </div>
+    </Router>
   );
 }
 

@@ -20,6 +20,11 @@ body {
     background-color: #dfe6e9;
     text-align: center;
   }
+
+  nav {
+    display: inline-block;
+    margin-left: 10px;
+  }
   
 .heading {
     text-align: center;
