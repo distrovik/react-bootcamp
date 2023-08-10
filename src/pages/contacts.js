@@ -1,10 +1,13 @@
-import Contacts from "../components/Contacts"
-import createCard from "../components/MapContacts"
+import Contacts from "../components/contact/Contacts"
+import createCard from "../components/contact/MapContacts"
+import Navbar from "../components/Navbar";
 
 function Contact() {
     return (
         <div>
-            {Contacts.map(createCard)}
+        <Navbar />
+        <h1 className="heading">Contacts</h1>
+        {Contacts.map(createCard)}
         </div>
     )
 };

@@ -1,7 +1,8 @@
+import "./contact.css"
+
 function Card(prop) {
     return (
         <div>
-      <h1 className="heading">Contacts</h1>
       <div className="card">
         <div className="top">
           <h2 className="name">{prop.name}</h2>

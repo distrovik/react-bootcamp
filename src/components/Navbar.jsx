@@ -7,6 +7,9 @@ function Navbar() {
         <nav>
             <a href="/Contacts">Contacts</a>
         </nav>
+        <nav>
+            <a href="/Emojipedia">Emojipedia</a>
+        </nav>
         </div>
     )
 }

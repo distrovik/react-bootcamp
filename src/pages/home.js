@@ -1,11 +1,9 @@
-import React from "react";
 import Heading from "../components/Heading";
 import Paragraph from "../components/Paragraph";
 import Personal, {Race} from "../components/Personal"
 import * as Image from "../components/Image"
-import Card from "../components/Card"
+import Card from "../components/contact/ContactCard"
 import Navbar from "../components/Navbar"
-
 
 function Home() {
     return (

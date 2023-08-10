@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "./ContactCard";
 
 function createCard(contact) {
     return (
