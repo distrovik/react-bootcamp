@@ -1,9 +1,9 @@
-import Heading from "../components/Heading";
-import Paragraph from "../components/Paragraph";
-import Personal, { Race } from "../components/Personal";
-import * as Image from "../components/Image";
+import Heading from "../components/home/Heading";
+import Paragraph from "../components/home/Paragraph";
+import Personal, { Race } from "../components/home/Personal";
+import * as Image from "../components/home/Image";
 import Card from "../components/contact/ContactCard";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/home/Navbar";
 
 function Home() {
   return (

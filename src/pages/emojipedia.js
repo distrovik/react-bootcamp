@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+import Navbar from "../components/home/Navbar";
 import Card from "../components/emojipedia/EmojipediaCard";
 import EmojipediaDB from "../components/emojipedia/EmojipediaDB";
 import "../components/emojipedia/emojipedia.css";

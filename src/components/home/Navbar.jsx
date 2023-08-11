@@ -5,10 +5,13 @@ function Navbar() {
         <a href="/">Home</a>
       </nav>
       <nav>
-        <a href="/Contacts">Contacts</a>
+        <a href="/contacts">Contacts</a>
       </nav>
       <nav>
-        <a href="/Emojipedia">Emojipedia</a>
+        <a href="/emojipedia">Emojipedia</a>
+      </nav>
+      <nav>
+        <a href="/login">Login</a>
       </nav>
     </div>
   );

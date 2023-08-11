@@ -1,6 +1,6 @@
 import ContactDB from "../components/contact/ContactDB";
 import createCard from "../components/contact/MapContacts";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/home/Navbar";
 
 function Contact() {
   return (
