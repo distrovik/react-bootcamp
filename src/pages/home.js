@@ -4,6 +4,7 @@ import Personal, { Race } from "../components/home/Personal";
 import * as Image from "../components/home/Image";
 import Card from "../components/contact/ContactCard";
 import Navbar from "../components/home/Navbar";
+import Time from "../components/home/Time";
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
         tel="011-63390XXX"
         email="mrirfanwork@gmail.com"
       />
+      <Time />
     </div>
   );
 }
