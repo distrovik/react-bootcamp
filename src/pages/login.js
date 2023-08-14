@@ -2,7 +2,7 @@ import LoginPage from "../components/login/login";
 import RegisterPage from "../components/login/register";
 import Navbar from "../components/home/Navbar";
 
-const userIsRegistered = false;
+const userIsRegistered = true;
 
 function Login() {
   return (
