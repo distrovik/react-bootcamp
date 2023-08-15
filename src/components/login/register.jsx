@@ -3,6 +3,12 @@ import Input from "./Input";
 import "./login.css";
 
 function Register() {
+  const [fullName, setfullName] = useState({
+    firstName: "",
+    lastName: "",
+    userName: "",
+  });
+
   const [mouseOver, setMouseOver] = useState();
 
   function handleMouseOver() {
@@ -11,12 +17,62 @@ function Register() {
   function handleMouseLeave() {
     setMouseOver(false);
   }
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+
+    setfullName((previousValue) => {
+      if (name === "firstName") {
+        return {
+          firstName: value,
+          lastName: previousValue.lastName,
+          userName: previousValue.userName,
+        };
+      } else if (name === "lastName") {
+        return {
+          firstName: previousValue.firstName,
+          lastName: value,
+          userName: previousValue.userName,
+        };
+      } else if (name === "userName") {
+        return {
+          firstName: previousValue.firstName,
+          lastName: previousValue.lastName,
+          userName: value,
+        };
+      }
+    });
+  }
+
   return (
     <body className="login-body">
       <div className="container">
-        <h1>Get Started</h1>
+        <h1>
+          Welcome Aboard {fullName.firstName} {fullName.lastName}
+        </h1>
+        <p>@{fullName.userName}</p>
         <form className="form">
-          <Input type="text" placeholder="Username" />
+          <input
+            name="userName"
+            type="text"
+            placeholder="Username"
+            value={fullName.userName}
+            onChange={handleChange}
+          />
+          <input
+            name="firstName"
+            type="text"
+            placeholder="First Name"
+            value={fullName.firstName}
+            onChange={handleChange}
+          />
+          <input
+            name="lastName"
+            type="text"
+            placeholder="Last Name"
+            value={fullName.lastName}
+            onChange={handleChange}
+          />
           <Input type="password" placeholder="Password" />
           <Input type="password" placeholder="Confirm Password" />
           <button
