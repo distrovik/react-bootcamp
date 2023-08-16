@@ -21,26 +21,9 @@ function Register() {
   function handleChange(event) {
     const { name, value } = event.target;
 
-    setfullName((previousValue) => {
-      if (name === "firstName") {
-        return {
-          firstName: value,
-          lastName: previousValue.lastName,
-          userName: previousValue.userName,
-        };
-      } else if (name === "lastName") {
-        return {
-          firstName: previousValue.firstName,
-          lastName: value,
-          userName: previousValue.userName,
-        };
-      } else if (name === "userName") {
-        return {
-          firstName: previousValue.firstName,
-          lastName: previousValue.lastName,
-          userName: value,
-        };
-      }
+    setfullName({
+      ...fullName,
+      [name]: value,
     });
   }
 
