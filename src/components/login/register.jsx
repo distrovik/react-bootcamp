@@ -21,9 +21,11 @@ function Register() {
   function handleChange(event) {
     const { name, value } = event.target;
 
-    setfullName({
-      ...fullName,
-      [name]: value,
+    setfullName((previousValue) => {
+      return {
+        ...previousValue,
+        [name]: value,
+      };
     });
   }
 
